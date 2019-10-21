@@ -828,7 +828,7 @@ class Dropkick {
         } else if ( event.ctrlKey || event.metaKey ) {
           this.select( target );
         } else {
-          this.reset( true );
+          // this.reset( true );
           this.select( target );
         }
       }
