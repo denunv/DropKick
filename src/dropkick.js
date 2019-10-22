@@ -348,7 +348,7 @@ class Dropkick {
     var i,
         dk = this.data.elem;
 
-    if ( !this.isOpen || this.multiple ) {
+    if ( !this.isOpen ) {
       return false;
     }
 
@@ -389,7 +389,7 @@ class Dropkick {
     dkTop = _.offset( dk ).top - scrollY;
     dkBottom = window.innerHeight - ( dkTop + dk.offsetHeight );
 
-    if ( this.isOpen || this.multiple ) { return false; }
+    if ( this.isOpen ) { return false; }
 
     dkOptsList.style.display = "block";
     dropHeight = dkOptsList.offsetHeight;
